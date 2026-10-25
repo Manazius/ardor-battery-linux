@@ -1,0 +1,4 @@
+# ARDOR Phantom PRO V2 receiver and wired mouse; local active session access to interface 01 only.
+# Separate rules deliberately match USB device and USB interface ancestors.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3554", ATTRS{idProduct}=="f52d|f52e", ENV{ARDOR_BATTERY_RECEIVER}="1"
+SUBSYSTEM=="hidraw", ENV{ARDOR_BATTERY_RECEIVER}=="1", ATTRS{bInterfaceNumber}=="01", TAG+="uaccess"

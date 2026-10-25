@@ -1,0 +1,3 @@
+# Default installation: the Qt tray and its Python dependencies.
+# The command-line reader itself requires no third-party Python packages.
+-r requirements-tray.txt

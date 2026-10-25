@@ -1,0 +1,5 @@
+# Direct runtime dependency for QtCore, QtGui and QtWidgets.
+# pip also installs shiboken6 at the exact version required by this package.
+# Official Linux wheels include Qt libraries/plugins, but still need native
+# system libraries. See docs/dependencies.md for Fedora and Wayland/XCB details.
+PySide6-Essentials>=6.6,<7

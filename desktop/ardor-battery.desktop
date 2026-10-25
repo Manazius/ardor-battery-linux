@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=ARDOR Battery
+Comment=Battery indicator for ARDOR Phantom PRO V2
+Comment[ru]=Индикатор заряда ARDOR Phantom PRO V2
+Exec=@PYTHON@ @TRAY@
+Icon=input-mouse
+Terminal=false
+Categories=Utility;
+StartupNotify=false

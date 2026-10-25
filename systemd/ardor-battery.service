@@ -1,0 +1,18 @@
+[Unit]
+Description=ARDOR mouse battery tray
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=120
+StartLimitBurst=6
+
+[Service]
+Type=simple
+ExecStart=@PYTHON@ @TRAY@
+WorkingDirectory=@ROOT@
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=5
+
+[Install]
+WantedBy=graphical-session.target
